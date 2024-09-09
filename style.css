@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Ensure the background is set */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+button:hover {
+  background-color: #F06279;
+}
+
+.banner{
+  background-image: url('/public//imgs/horizontal-banner-cosmetic-product-with-kiwi-citrus\ 2.png');
+}
+.banner2{
+  background-image: url('/public//imgs/pexels-shiny-diamond-3373737.png');
+}
+
+#toggle:checked ~ #overlay {
+  opacity: 1; /* Make the overlay visible */
+  pointer-events: auto; /* Enable interaction with the overlay */
+}
+
+/* Initial state: hidden overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Prevent interaction */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.filter{
+  background-image: url('/public/imgs/pexels-nora-topicals-7038192\ \(1\).png');
+}
+.filter2{
+  background-image: url('/public/imgs/pexels-nora-topicals-7038192.png');
+}
+#catalog-overlay {
+  display: none;
+  top: 24%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#catalog-toggle:checked ~ #catalog-overlay {
+  opacity: 0.8;
+  pointer-events: auto;
+  display: block;
+}
+
+#catalog-toggle:checked ~ nav {
+  z-index: 50;
+}
+
+
+
+
+
+
+input[type="radio"] {
+  appearance: none;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+input[type="radio"]:checked {
+  border-color: #ED2F59;
+}
+input[type="radio"]:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ED2F59;
+}
+
+@media (max-width: 1175px) {
+  .scroll-on-small {
+    overflow-x: auto; 
+  }
+  
+  .scroll-on-small::-webkit-scrollbar {
+    height: 4px;
+    margin-top: 15px;
+  }
+  
+  .scroll-on-small::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+  }
+  
+  .scroll-on-small::-webkit-scrollbar-thumb {
+    background: #000; 
+
+  }
+  
+
+
+
+
+}
+

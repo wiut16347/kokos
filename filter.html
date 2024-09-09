@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="hidden lg:flex justify-center py-2 bg-black ">
+            <div class="font-[500] max-w-[85%] w-[100%] text-white flex justify-between items-center">
+                <ul class="flex gap-3 text-[11px]">
+                    <li>Как заказать?</li>
+                    <li>Подарки при покупке</li>
+                    <li>Бонусная информация (условия программы лояльности)</li>
+                    <li>О компании</li>
+                </ul>
+                <div class="flex gap-3">
+                    <img src="/public/imgs/call-calling.png" alt="">
+                    <p>90 990 90 90</p>
+                </div>
+            </div>
+        </div>
+        <nav class="flex justify-center py-4 z-50">
+            <div class="max-w-[85%] w-[100%] flex justify-between items-center z-50">
+                <a href="index.html"><img src="/public/imgs/Vector (1).png" alt="Logo"></a>
+                <div class="flex items-center gap-5">
+                    <ul class="hidden lg:flex gap-3 text-[15px] font-[500]">
+                        <li>
+                            <label for="catalog-toggle" class="cursor-pointer">Каталог</label>
+                        </li>
+                        <a href="brand.html">
+                            <li>Бренды</li>
+                        </a>
+                        <li class="flex items-center gap-2">
+                            <p>Акции и скидки</p>
+                            <img src="/public/imgs/discount-shape.png" alt="Discount">
+                        </li>
+                        <a href="contacts.html">
+                            <a href="contacts.html">
+                                <li>Контакты</li>
+                            </a>
+                        </a>
+                    </ul>
+                    <div>
+                        <select>
+                            <option>Русский</option>
+                            <option>Ozbekcha</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-3 text-[12px]">
+                        <a href="personal.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 42.png" alt="">
+                                <p>аккаунт</p>
+                            </li>
+                        </a>
+                        <a href="search.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 43.png" alt="">
+                                <p>поиск</p>
+                            </li>
+                        </a>
+                        <a href="favorite.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 44.png" alt="">
+                                <p>избранное</p>
+                            </li>
+                        </a>
+                        <a href="cart.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 45.png" alt="">
+                                <p>корзина</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="lg:hidden flex items-center gap-5">
+                        <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 3.png" alt="Menu Icon 1">
+                        <label for="toggle" class="cursor-pointer">
+                            <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 4.png" alt="Menu Icon 2">
+                        </label>
+                        <input type="checkbox" id="toggle" class="hidden">
+                        <div id="overlay"
+                            class="fixed py-4 inset-0 bg-white z-30 flex flex-col items-center opacity-0 pointer-events-none transition-opacity">
+                            <div class="max-w-[85%] w-[100%] flex justify-between items-center z-50">
+                                <img src="/public/imgs/Vector (1).png" alt="Logo">
+                                <div class="flex items-center gap-5">
+                                    <div>
+                                        <select>
+                                            <option>Русский</option>
+                                            <option>Ozbekcha</option>
+                                            <option>English</option>
+                                        </select>
+                                    </div>
+                                    <div class="lg:hidden flex items-center gap-5">
+                                        <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 3.png" alt="Menu Icon 1">
+                                        <label for="toggle" class="cursor-pointer">
+                                            <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 36.png"
+                                                alt="Menu Icon 2">
+                                        </label>
+                                        <input type="checkbox" id="toggle" class="hidden">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full border-t border-t-[#EDEDED] my-4"></div>
+
+                            <div class="w-[85%] py-5">
+                                <div class="flex flex-col gap-7">
+                                    <div>
+                                        <ul class="flex flex-col gap-4 text-[15px] font-[500] leading-[21px]">
+                                            <li class="flex justify-between">Каталог <p>></p>
+                                            </li>
+                                            <li>Бренды</li>
+                                            <li>О компании</li>
+                                            <li class="flex items-center gap-2">
+                                                <p>Акции и скидки</p>
+                                                <img src="/public/imgs/discount-shape.png" alt="Discount">
+                                            </li>
+                                            <a href="contacts.html">
+                                                <li>Контакты</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="flex flex-col gap-4">
+                                            <li class="text-[14px] font-[500] underline">Условия доставки и оплаты</li>
+                                            <li class="text-[14px] font-[500] underline">Возврат товаров</li>
+                                            <li class="text-[14px] font-[500] underline">Как заказать?</li>
+                                            <li class="text-[14px] font-[500] underline">Подарки при покупке</li>
+                                            <li class="text-[14px] font-[500] underline">Бонусная информация <br>
+                                                (условия программы
+                                                лояльности)</li>
+                                            <a href="review.html">
+                                                <li class="text-[14px] font-[500] underline">Отзывы о Нас</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        <div class="w-full border-t border-t-[#EDEDED] my-4"></div>
+        <input type="checkbox" id="catalog-toggle" class="hidden">
+        <div id="catalog-overlay" class=" bg-black opacity-0 w-full h-[100vh] duration-300 z-40">
+            <div class="bg-white flex justify-center">
+                <div class="flex w-[85%] gap-[50px]">
+                    <div class="w-[240px] flex flex-col gap-2">
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Вата, влажка</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Гели, пены, соли</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Декоративная косметика</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Детская серия</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Женская гигиена</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[#ED2F59] text-[14px] font-[500]">Женская серия</p>
+                            <p class="text-[#ED2F59]">></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Краска для волос</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Мужская серия</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Оборудование</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Парфюмерия</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Подарочная упаковка</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Расчёски, галантерия</p>
+                            <p>></p>
+                        </ul>
+                    </div>
+
+
+                    <div class="w-[240px] md:flex hidden  flex-col gap-[15px]">
+                        <p class="text-[14px] font-[500] text-[#ED2F59]">Бальзамы</p>
+                        <p class="text-[14px] font-[500] ">Влажные салфетки</p>
+                        <p class="text-[14px] font-[500] ">Для мам</p>
+                        <p class="text-[14px] font-[500] ">Зубные пасты</p>
+                        <p class="text-[14px] font-[500] ">Купание</p>
+                        <p class="text-[14px] font-[500] ">Открытки</p>
+                        <p class="text-[14px] font-[500] ">Подарочные наборы</p>
+                        <p class="text-[14px] font-[500] ">Уход за волосами</p>
+                        <p class="text-[14px] font-[500] ">Уход за кожей</p>
+                        <p class="text-[14px] font-[500] ">Уход за лицом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="filter relative bg-opacity-[40%] bg-cover bg-center h-[340px] w-full">
+        <div class="absolute inset-0 bg-black opacity-40 pointer-events-none"></div>
+        <div class="relative flex items-center justify-center h-full z-10">
+            <h3 class="text-[32px] font-[400] uppercase text-white">волосы</h3>
+        </div>
+        <p class="absolute text-[16px] font-[500] bottom-4 left-1/2 transform -translate-x-1/2 text-white z-10">Товаров:
+            9</p>
+    </div>
+
+
+
+    <main>
+        <div class="flex justify-center">
+            <div class="w-[85%] ">
+                <h3 class="text-[14px] font-[500] py-5">Главная / Каталог / Волосы</h3>
+                <div class="flex flex-col gap-5 lg:gap-0 items-center lg:items-start  lg:flex-row lg:justify-between">
+                    <div
+                        class="flex lg:hidden justify-center items-center gap-3 border-[#EDEDED] h-[50px] border-2 w-full max-w-[340px] py-5">
+                        <p class="text-[16px] font-[500]">фильтры</p>
+                        <div><img src="/public/imgs/setting-3.png" alt=""></div>
+                    </div>
+
+                    <div class="hidden lg:block">
+                        <div class="flex flex-col">
+                            <div class="flex flex-col gap-3">
+                                <h3 class="font-[500] text-[20px]">Фильтр товаров</h3>
+                                <p class="font-[400] text-[14px] max-w-[180px] text-[#898989]">Воспользуйтесь фильтром,
+                                    для более точного поиска продукта</p>
+                                <button
+                                    class="w-[220px] h-[40px] text-[14px] font-[500] flex justify-center items-center text-white bg-[#ED2F59]">сбросить</button>
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Категория Section -->
+                            <div class="flex flex-col gap-5 border-y-[1px] py-5">
+                                <div class="flex justify-between items-center">
+                                    <h3>Категория</h3>
+                                    <div>
+                                        <img src="/public/imgs/Vector (26).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 flex-col">
+                                    <h3 class="text-[16px] font-[500] text-[#ED2F59] uppercase">Волосы</h3>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center">
+                                            <input type="radio" id="category1" name="category" value="shampoos"
+                                                class="mr-2">
+                                            <label for="category1">Шампуни</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="category2" name="category" value="scalp"
+                                                class="mr-2">
+                                            <label for="category2">Средства для кожи головы</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="category3" name="category" value="cash"
+                                                class="mr-2">
+                                            <label for="category3">Наличные</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="category4" name="category" value="haircare"
+                                                class="mr-2">
+                                            <label for="category4">Уход за волосами</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="category5" name="category" value="accessories"
+                                                class="mr-2">
+                                            <label for="category5">Аксессуары для волос</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Бренды Section -->
+                            <div class="flex flex-col gap-5 border-y-[1px] py-5">
+                                <div class="flex justify-between items-center">
+                                    <h3>Бренды</h3>
+                                    <div>
+                                        <img src="/public/imgs/Vector (26).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 flex-col">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand1" name="brand" value="ABSOLUTE NEW YORK"
+                                                class="mr-2">
+                                            <label for="brand1">ABSOLUTE NEW YORK</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand2" name="brand" value="Acca Kappa"
+                                                class="mr-2">
+                                            <label for="brand2">Acca Kappa</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand3" name="brand" value="A-Derma" class="mr-2">
+                                            <label for="brand3">A-Derma</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand4" name="brand" value="B.Well" class="mr-2">
+                                            <label for="brand4">B.Well</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand5" name="brand" value="B&D" class="mr-2">
+                                            <label for="brand5">B&D</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand6" name="brand" value="Baby Balance"
+                                                class="mr-2">
+                                            <label for="brand6">Baby Balance</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand7" name="brand" value="BABOR" class="mr-2">
+                                            <label for="brand7">BABOR</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand8" name="brand" value="C:EHKO" class="mr-2">
+                                            <label for="brand8">C:EHKO</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand9" name="brand" value="Cacharel" class="mr-2">
+                                            <label for="brand9">Cacharel</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="brand10" name="brand" value="Cactus" class="mr-2">
+                                            <label for="brand10">Cactus</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Сортировать по Section -->
+                            <div class="flex flex-col gap-5 border-y-[1px] py-5">
+                                <div class="flex justify-between items-center">
+                                    <h3>Сортировать по</h3>
+                                    <div>
+                                        <img src="/public/imgs/Vector (26).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 flex-col">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center">
+                                            <input type="radio" id="sort1" name="sort" value="asc" class="mr-2">
+                                            <label for="sort1">По возрастанию цены</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="sort2" name="sort" value="desc" class="mr-2">
+                                            <label for="sort2">По убыванию цены</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="sort3" name="sort" value="discount" class="mr-2">
+                                            <label for="sort3">По величине скидки</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Назначение Section -->
+                            <div class="flex flex-col gap-5 border-y-[1px] py-5">
+                                <div class="flex justify-between items-center">
+                                    <h3>Назначение</h3>
+                                    <div>
+                                        <img src="/public/imgs/Vector (26).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 flex-col">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center">
+                                            <input type="radio" id="purpose1" name="purpose" value="imperfections"
+                                                class="mr-2">
+                                            <label for="purpose1">Против несовершенств</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="purpose2" name="purpose" value="cleansing"
+                                                class="mr-2">
+                                            <label for="purpose2">Очищение</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Тип продукта Section -->
+                            <div class="flex flex-col gap-5 border-y-[1px] py-5">
+                                <div class="flex justify-between items-center">
+                                    <h3>Тип продукта</h3>
+                                    <div>
+                                        <img src="/public/imgs/Vector (26).png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 flex-col">
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex items-center">
+                                            <input type="radio" id="productType1" name="productType" value="peeling"
+                                                class="mr-2">
+                                            <label for="productType1">Пилинг</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="productType2" name="productType" value="masks"
+                                                class="mr-2">
+                                            <label for="productType2">Маски тканевые</label>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <input type="radio" id="productType3" name="productType" value="serums"
+                                                class="mr-2">
+                                            <label for="productType3">Сыворотки</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div class=" flex flex-col w-full lg:w-fit justify-center lg:grid lg:grid-cols-3 gap-3 h-full">
+                            <div class="border-[#EDEDED]   border-2 max-w-[340px] h-[502px] relative">
+                                <div
+                                    class="absolute flex justify-center text-white font-[700] w-[35px] h-[35px] bg-[#FFA800]">
+                                    new</div>
+                                <div class="absolute right-3 top-3">
+                                    <img src="/public//imgs/Frame 2.png" alt="">
+                                </div>
+                                <div class="flex justify-center">
+                                    <img src="/public//imgs//2_550e6bd3-bfdb-402b-908a-0e1564267674 1.png" alt="">
+                                </div>
+                                <div class="m-5">
+                                    <h2 class="font-[500] text-[18px]">Lorem ipsum dolor</h2>
+                                    <h3 class="font-[400] text-[14px] text-[#898989] mb-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit...</h3>
+                                    <div class="flex justify-between">
+                                        <div class="flex mb-3">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                        </div>
+                                        <p>5 отзывов</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-[500] text-[15px] text-[#000000]">80 000 сум</p>
+                                            <p class="font-[500] text-[15px] text-[#898989] line-through">120 000 сум
+                                            </p>
+                                        </div>
+                                        <div class="flex gap-5 items-center justify-center">
+                                            <button class="w-[40px] h-[40px] bg-[#ED2F59] text-white">-</button>
+                                            <h3>1</h3>
+                                            <button class="w-[40px] h-[40px] bg-[#ED2F59] text-white">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-[#EDEDED] border-2 max-w-[340px] h-[502px] relative">
+                                <div
+                                    class="absolute flex justify-center text-white font-[700] w-[35px] h-[35px] bg-[#FFA800]">
+                                    new</div>
+                                <div class="absolute right-3 top-3"><img src="/public//imgs/Frame 2.png" alt=""></div>
+                                <div class="flex justify-center">
+                                    <img src="/public//imgs/6_6ca4bba1-5b41-45fb-8517-ed26ff413f90 1.png" alt="">
+                                </div>
+                                <div class="m-5">
+                                    <h2 class="font-[500] text-[18px]">Lorem ipsum dolor</h2>
+                                    <h3 class="font-[400] text-[14px] text-[#898989] mb-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit...</h3>
+                                    <div class="flex justify-between">
+                                        <div class="flex mb-3">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                        </div>
+                                        <p>5 отзывов</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-[500] text-[15px] text-[#000000]">250 000 сум</p>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center w-[140px] h-[40px] bg-[#ED2F59] text-white">
+                                            в корзину <img class="ml-2" src="/public/imgs/Vector (6).png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-[#EDEDED] border-2 max-w-[340px] h-[502px] relative">
+                                <div
+                                    class="absolute flex justify-center text-white font-[700] w-[35px] h-[35px] bg-[#FFA800]">
+                                    new</div>
+                                <div class="absolute right-3 top-3"><img src="/public//imgs/Frame 2.png" alt=""></div>
+                                <div class="flex justify-center">
+                                    <img src="/public//imgs/new-shop-2_2000x 1.png" alt="">
+                                </div>
+                                <div class="m-5">
+                                    <h2 class="font-[500] text-[18px]">Lorem ipsum dolor</h2>
+                                    <h3 class="font-[400] text-[14px] text-[#898989] mb-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit...</h3>
+                                    <div class="flex justify-between">
+                                        <div class="flex mb-3">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                        </div>
+                                        <p>5 отзывов</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-[500] text-[15px] text-[#000000]">250 000 сум</p>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center w-[140px] h-[40px] bg-[#ED2F59] text-white">
+                                            в корзину <img class="ml-2" src="/public/imgs/Vector (6).png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-[#EDEDED] border-2 max-w-[340px] h-[502px] relative">
+                                <div
+                                    class="absolute flex justify-center text-white font-[700] w-[35px] h-[35px] bg-[#FFA800]">
+                                    new</div>
+                                <div class="absolute right-3 top-3"><img src="/public//imgs/Frame 2.png" alt=""></div>
+                                <div class="flex justify-center">
+                                    <img src="/public//imgs/15_ff1a7f4b-455a-4b03-bf3f-f62c980e2be2 1.png" alt="">
+                                </div>
+                                <div class="m-5">
+                                    <h2 class="font-[500] text-[18px]">Lorem ipsum dolor</h2>
+                                    <h3 class="font-[400] text-[14px] text-[#898989] mb-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit...</h3>
+                                    <div class="flex justify-between">
+                                        <div class="flex mb-3">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                        </div>
+                                        <p>5 отзывов</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-[500] text-[15px] text-[#000000]">250 000 сум</p>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center w-[140px] h-[40px] bg-[#ED2F59] text-white">
+                                            в корзину <img class="ml-2" src="/public/imgs/Vector (6).png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="border-[#EDEDED] border-2 max-w-[340px] h-[502px] relative">
+                                <div
+                                    class="absolute flex justify-center text-white font-[700] w-[35px] h-[35px] bg-[#FFA800]">
+                                    new</div>
+                                <div class="absolute right-3 top-3"><img src="/public//imgs/Frame 2.png" alt=""></div>
+                                <div class="flex justify-center">
+                                    <img src="/public//imgs/15_ff1a7f4b-455a-4b03-bf3f-f62c980e2be2 1.png" alt="">
+                                </div>
+                                <div class="m-5">
+                                    <h2 class="font-[500] text-[18px]">Lorem ipsum dolor</h2>
+                                    <h3 class="font-[400] text-[14px] text-[#898989] mb-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit...</h3>
+                                    <div class="flex justify-between">
+                                        <div class="flex mb-3">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                        </div>
+                                        <p>5 отзывов</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-[500] text-[15px] text-[#000000]">250 000 сум</p>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center w-[140px] h-[40px] bg-[#ED2F59] text-white">
+                                            в корзину <img class="ml-2" src="/public/imgs/Vector (6).png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="border-[#EDEDED] border-2 max-w-[340px] h-[502px] relative">
+                                <div
+                                    class="absolute flex justify-center text-white font-[700] w-[35px] h-[35px] bg-[#FFA800]">
+                                    new</div>
+                                <div class="absolute right-3 top-3"><img src="/public//imgs/Frame 2.png" alt=""></div>
+                                <div class="flex justify-center">
+                                    <img src="/public//imgs/15_ff1a7f4b-455a-4b03-bf3f-f62c980e2be2 1.png" alt="">
+                                </div>
+                                <div class="m-5">
+                                    <h2 class="font-[500] text-[18px]">Lorem ipsum dolor</h2>
+                                    <h3 class="font-[400] text-[14px] text-[#898989] mb-3">Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing
+                                        elit...</h3>
+                                    <div class="flex justify-between">
+                                        <div class="flex mb-3">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (4).png" alt="">
+                                            <img class="w-[19px] h-[18px]" src="/public//imgs/Vector (5).png" alt="">
+                                        </div>
+                                        <p>5 отзывов</p>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <p class="font-[500] text-[15px] text-[#000000]">250 000 сум</p>
+                                        </div>
+                                        <button
+                                            class="flex items-center justify-center w-[140px] h-[40px] bg-[#ED2F59] text-white">
+                                            в корзину <img class="ml-2" src="/public/imgs/Vector (6).png" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 py-7">
+                            <div
+                                class="w-[40px] h-[40px] flex justify-center items-center shadow-lg  border-[#EDEDED] border-[1px]">
+                                <img src="/public/imgs/Vector (24).png" alt="">
+                            </div>
+                            <div
+                                class="w-[40px] h-[40px] flex justify-center items-center shadow-lg  border-[#EDEDED] border-[1px] bg-[#ED2F59] text-white text-[14px] font-[700]">
+                                1</div>
+                            <div
+                                class="w-[40px] h-[40px] flex justify-center items-center shadow-lg  border-[#EDEDED] border-[1px] text-[14px] font-[700]">
+                                2</div>
+                            <div
+                                class="w-[40px] h-[40px] flex justify-center items-center shadow-lg  border-[#EDEDED] border-[1px]">
+                                <img src="/public/imgs/Vector (25).png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-10">
+        <div class="flex justify-center bg-[#EDEDED]">
+            <div class="w-[85%] my-12 hidden md:flex justify-between items-center">
+                <div>
+                    <ul class="flex flex-col gap-4 text-[15px] font-[500] leading-[21px]">
+                        <li>Каталог </li>
+                        <li>Бренды</li>
+                        <a href="company.html">
+                            <li>О компании</li>
+                        </a>
+                        <li class="flex items-center gap-2">
+                            <p>Акции и скидки</p>
+                            <img src="/public/imgs/discount-shape.png" alt="Discount">
+                        </li>
+                        <a href="contacts.html">
+                            <li>Контакты</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="flex gap-10 flex-col items-center">
+                    <div>
+                        <img src="/public/imgs/Vector (1).png" alt="Logo">
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center rounded bg-black text-white leading-[15px] h-[45px]  w-[175px]">
+                            <img class="w-[30px] h-[35px] mx-2" src="/public/imgs/Group.png" alt="">
+                            <p class="text-[12px]">Загрузите в <br><span class="text-[22px]">AppStore</span></p>
+                        </div>
+                        <div class="flex rounded items-center bg-black text-white h-[45px] w-[175px] leading-[15px] ">
+                            <img class="w-[45px] h-[45px] ml-2" src="/public/imgs/Google_Play-Icon-Logo.wine.png"
+                                alt="">
+                            <p class="text-[12px]">Доступно в <br><span class="text-[22px]">Google Play</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <ul class="flex flex-col gap-3 text-[14px] font-[500] underline">
+                        <li>Условия доставки и оплаты</li>
+                        <li>Возврат товаров</li>
+                        <li>Как заказать?</li>
+                        <li>Подарки при покупке</li>
+                        <li>Бонусная информация <br>(условия программы лояльности)</li>
+                        <a href="review.html">
+                            <li>Отзывы о нас</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- sec -->
+            <div class="w-[85%] my-12 flex flex-col md:hidden ">
+                <div class="flex flex-col">
+                    <div>
+                        <img src="/public/imgs/Vector (1).png" alt="Logo">
+                    </div>
+                    <ul class="flex justify-between py-10 text-[15px] font-[500] leading-[21px]">
+                        <div class="flex flex-col gap-3">
+                            <li>Каталог</li>
+                            <li>Бренды</li>
+                            <a href="company.html">
+                                <li>О компании</li>
+                            </a>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <li class="flex items-center gap-2">
+                                <p>Акции <br> и скидки</p>
+                                <img src="/public/imgs/discount-shape.png" alt="Discount">
+                            </li>
+                            <a href="contacts.html">
+                                <li class="basis-1/2">Контакты</li>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="flex flex-col gap-3 text-[14px] font-[500] underline">
+                        <li>Условия доставки и оплаты</li>
+                        <li>Возврат товаров</li>
+                        <li>Как заказать?</li>
+                        <li>Подарки при покупке</li>
+                        <li>Бонусная информация <br>(условия программы лояльности)</li>
+                        <a href="review.html">
+                            <li>отзывы о нас</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="py-8">
+                    <div class="flex justify-between">
+                        <div class="flex items-center rounded bg-black text-white leading-[15px] h-[45px]  w-[175px]">
+                            <img class="w-[30px] h-[35px] mx-2" src="/public/imgs/Group.png" alt="">
+                            <p class="text-[12px]">Загрузите в <br><span class="text-[22px]">AppStore</span></p>
+                        </div>
+                        <div class="flex rounded items-center bg-black text-white h-[45px] w-[175px] leading-[15px] ">
+                            <img class="w-[45px] h-[45px] ml-2" src="/public/imgs/Google_Play-Icon-Logo.wine.png"
+                                alt="">
+                            <p class="text-[12px]">Доступно в <br><span class="text-[22px]">Google Play</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="flex  justify-center bg-black text-white">
+            <div class="w-[85%] flex gap-5 lg:gap-0 flex-col lg:flex-row lg:justify-between lg:items-center py-5 ">
+                <h3 class="text-[16px] font-[500]">©2022 Kokos. Все права защищены.</h3>
+                <div class="flex gap-8">
+                    <div>
+                        <img class="cursor-pointer" src="/public/imgs/Vector (9).png" alt="">
+                    </div>
+                    <div>
+                        <img class="cursor-pointer" src="/public/imgs/Vector (10).png" alt="">
+                    </div>
+                    <div>
+                        <img class="cursor-pointer" src="/public/imgs/Vector (11).png" alt="">
+                    </div>
+
+                </div>
+                <h3 class="text-[16px] font-[500]">Сайт разработан в Zetta Online</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

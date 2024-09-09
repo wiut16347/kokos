@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="hidden lg:flex justify-center py-2 bg-black ">
+            <div class="font-[500] max-w-[85%] w-[100%] text-white flex justify-between items-center">
+                <ul class="flex gap-3 text-[11px]">
+                    <li>Как заказать?</li>
+                    <li>Подарки при покупке</li>
+                    <li>Бонусная информация (условия программы лояльности)</li>
+                    <li>О компании</li>
+                </ul>
+                <div class="flex gap-3">
+                    <img src="/public/imgs/call-calling.png" alt="">
+                    <p>90 990 90 90</p>
+                </div>
+            </div>
+        </div>
+        <nav class="flex justify-center py-4 z-50">
+            <div class="max-w-[85%] w-[100%] flex justify-between items-center z-50">
+                <a href="index.html"><img src="/public/imgs/Vector (1).png" alt="Logo"></a>
+                <div class="flex items-center gap-5">
+                    <ul class="hidden lg:flex gap-3 text-[15px] font-[500]">
+                        <li>
+                            <label for="catalog-toggle" class="cursor-pointer">Каталог</label>
+                        </li>
+                        <a href="brand.html">
+                            <li>Бренды</li>
+                        </a>
+                        <li class="flex items-center gap-2">
+                            <p>Акции и скидки</p>
+                            <img src="/public/imgs/discount-shape.png" alt="Discount">
+                        </li>
+                        <a href="contacts.html">
+                            <a href="contacts.html">
+                                <li>Контакты</li>
+                            </a>
+                        </a>
+                    </ul>
+                    <div>
+                        <select>
+                            <option>Русский</option>
+                            <option>Ozbekcha</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <div class="hidden lg:flex items-center gap-3 text-[12px]">
+                        <a href="personal.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 42.png" alt="">
+                                <p>аккаунт</p>
+                            </li>
+                        </a>
+                        <a href="search.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 43.png" alt="">
+                                <p>поиск</p>
+                            </li>
+                        </a>
+                        <a href="favorite.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 44.png" alt="">
+                                <p>избранное</p>
+                            </li>
+                        </a>
+                        <a href="cart.html">
+                            <li class="flex flex-col items-center">
+                                <img src="/public/imgs/Frame 45.png" alt="">
+                                <p>корзина</p>
+                            </li>
+                        </a>
+                    </div>
+                    <div class="lg:hidden flex items-center gap-5">
+                        <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 3.png" alt="Menu Icon 1">
+                        <label for="toggle" class="cursor-pointer">
+                            <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 4.png" alt="Menu Icon 2">
+                        </label>
+                        <input type="checkbox" id="toggle" class="hidden">
+                        <div id="overlay"
+                            class="fixed py-4 inset-0 bg-white z-30 flex flex-col items-center opacity-0 pointer-events-none transition-opacity">
+                            <div class="max-w-[85%] w-[100%] flex justify-between items-center z-50">
+                                <img src="/public/imgs/Vector (1).png" alt="Logo">
+                                <div class="flex items-center gap-5">
+                                    <div>
+                                        <select>
+                                            <option>Русский</option>
+                                            <option>Ozbekcha</option>
+                                            <option>English</option>
+                                        </select>
+                                    </div>
+                                    <div class="lg:hidden flex items-center gap-5">
+                                        <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 3.png" alt="Menu Icon 1">
+                                        <label for="toggle" class="cursor-pointer">
+                                            <img class="w-[24px] h-[24px]" src="/public/imgs/Frame 36.png"
+                                                alt="Menu Icon 2">
+                                        </label>
+                                        <input type="checkbox" id="toggle" class="hidden">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full border-t border-t-[#EDEDED] my-4"></div>
+
+                            <div class="w-[85%] py-5">
+                                <div class="flex flex-col gap-7">
+                                    <div>
+                                        <ul class="flex flex-col gap-4 text-[15px] font-[500] leading-[21px]">
+                                            <li class="flex justify-between">Каталог <p>></p>
+                                            </li>
+                                            <li>Бренды</li>
+                                            <li>О компании</li>
+                                            <li class="flex items-center gap-2">
+                                                <p>Акции и скидки</p>
+                                                <img src="/public/imgs/discount-shape.png" alt="Discount">
+                                            </li>
+                                            <a href="contacts.html">
+                                                <li>Контакты</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="flex flex-col gap-4">
+                                            <li class="text-[14px] font-[500] underline">Условия доставки и оплаты</li>
+                                            <li class="text-[14px] font-[500] underline">Возврат товаров</li>
+                                            <li class="text-[14px] font-[500] underline">Как заказать?</li>
+                                            <li class="text-[14px] font-[500] underline">Подарки при покупке</li>
+                                            <li class="text-[14px] font-[500] underline">Бонусная информация <br>
+                                                (условия программы
+                                                лояльности)</li>
+                                            <a href="review.html">
+                                                <li class="text-[14px] font-[500] underline">Отзывы о Нас</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        <div class="w-full border-t border-t-[#EDEDED] my-4"></div>
+        <input type="checkbox" id="catalog-toggle" class="hidden">
+        <div id="catalog-overlay" class=" bg-black opacity-0 w-full h-[100vh] duration-300 z-40">
+            <div class="bg-white flex justify-center">
+                <div class="flex w-[85%] gap-[50px]">
+                    <div class="w-[240px] flex flex-col gap-2">
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Вата, влажка</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Гели, пены, соли</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Декоративная косметика</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Детская серия</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Женская гигиена</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[#ED2F59] text-[14px] font-[500]">Женская серия</p>
+                            <p class="text-[#ED2F59]">></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Краска для волос</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Мужская серия</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Оборудование</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Парфюмерия</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Подарочная упаковка</p>
+                            <p>></p>
+                        </ul>
+                        <ul class="flex items-center justify-between">
+                            <p class="text-[14px] font-[500]">Расчёски, галантерия</p>
+                            <p>></p>
+                        </ul>
+                    </div>
+
+
+                    <div class="w-[240px] md:flex hidden  flex-col gap-[15px]">
+                        <p class="text-[14px] font-[500] text-[#ED2F59]">Бальзамы</p>
+                        <p class="text-[14px] font-[500] ">Влажные салфетки</p>
+                        <p class="text-[14px] font-[500] ">Для мам</p>
+                        <p class="text-[14px] font-[500] ">Зубные пасты</p>
+                        <p class="text-[14px] font-[500] ">Купание</p>
+                        <p class="text-[14px] font-[500] ">Открытки</p>
+                        <p class="text-[14px] font-[500] ">Подарочные наборы</p>
+                        <p class="text-[14px] font-[500] ">Уход за волосами</p>
+                        <p class="text-[14px] font-[500] ">Уход за кожей</p>
+                        <p class="text-[14px] font-[500] ">Уход за лицом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex justify-center py-5">
+            <div class="w-[85%]">
+                <h2 class="text-[32px] font-[400] uppercase lg:text-start text-center">профиль</h2>
+
+                <div class="py-5 flex lg:flex-row flex-col lg:justify-between ">
+                    <div class="flex flex-col items-center lg:justify-start gap-10">
+                        <div class="bg-black w-[340px] h-[190px] flex justify-center items-center">
+                            <div class="flex flex-col gap-5">
+                                <div>
+                                    <img src="/public/imgs/Vector (15).png" alt="">
+                                </div>
+                                <h3 class="text-[20px] font-[500] text-white">Терентьев Иван</h3>
+                            </div>
+                        </div>
+
+                        <div class="border-[1px] w-[340px] h-[358px] flex justify-center items-center">
+                            <div class="flex flex-col gap-5 text-center">
+                                <h3 class="font-[500] text-[18px]">Личные данные</h3>
+                                <div>
+                                    <p class="text-[#ED2F59] font-[500] text-[16px]">дата рождения:</p>
+                                    <p class="font-[500] text-[16px]">05.06.1995</p>
+                                </div>
+                                <div>
+                                    <p class="text-[#ED2F59] font-[500] text-[16px]">Номер телефона:</p>
+                                    <p class="font-[500] text-[16px]">+99890 990 90 90</p>
+                                </div>
+                                <div>
+                                    <p class="text-[#ED2F59] font-[500] text-[16px]">Дата регистрации:</p>
+                                    <p class="font-[500] text-[16px]">30.04.2022</p>
+                                </div>
+                                <h3 class="font-[500] text-[16px] underline">Выйти</h3>
+                            </div>
+                        </div>
+
+
+                        <div class="border-[1px] w-[340px] h-[150px] flex justify-center items-center">
+                            <div class="flex flex-col gap-5 text-center">
+                                <h3 class="font-[500] text-[18px]">Накопительная</h3>
+                                <div><img src="" alt=""></div>
+                                <div>
+                                    <p class="font-[500] text-[16px]">Ваш баланс: 150 000 сум</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-[32px] font-[400] pb-8 uppercase lg:text-start text-center">История заказов</h2>
+
+                        <table class="lg:block hidden w-full border-collapse border-spacing-y-4 border-spacing-x-12">
+                            <thead>
+                                <tr class="border-y-[1px]">
+                                    <th class="text-left px-4 py-2">№</th>
+                                    <th class="text-left px-4 py-2">Дата</th>
+                                    <th class="text-left px-4 py-2">Способ оплаты</th>
+                                    <th class="text-left px-4 py-2">Статус</th>
+                                    <th class="text-left px-4 py-2">Сумма</th>
+                                    <th class="text-left px-4 py-2">Кэшбэк</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b-[1px] border-gray-300">
+                                    <td class="px-4 py-2 font-[500] text-[16px]">548648</td>
+                                    <td class="px-4 py-2">11.12.2021</td>
+                                    <td class="px-4 py-2">Наличные</td>
+                                    <td class="px-4 py-2">Открыт</td>
+                                    <td class="px-4 py-2">50 000 сум</td>
+                                    <td class="px-4 py-2">5 000 сум</td>
+                                </tr>
+                                <tr class="border-b-[1px] border-gray-300">
+                                    <td class="px-4 py-2 font-[500] text-[16px]">484589</td>
+                                    <td class="px-4 py-2">04.09.2021</td>
+                                    <td class="px-4 py-2">Терминал</td>
+                                    <td class="px-4 py-2">Закрыт</td>
+                                    <td class="px-4 py-2">34 000 сум</td>
+                                    <td class="px-4 py-2">4 000 сум</td>
+                                </tr>
+                                <tr class="border-b-[1px] border-gray-300">
+                                    <td class="px-4 py-2 font-[500] text-[16px]">845687</td>
+                                    <td class="px-4 py-2">11.01.2021</td>
+                                    <td class="px-4 py-2">Терминал</td>
+                                    <td class="px-4 py-2">Закрыт</td>
+                                    <td class="px-4 py-2">75 000 сум</td>
+                                    <td class="px-4 py-2">2 000 сум</td>
+                                </tr>
+                                <tr class="border-b-[1px] border-gray-300">
+                                    <td class="px-4 py-2 font-[500] text-[16px]">984829</td>
+                                    <td class="px-4 py-2">14.08.2021</td>
+                                    <td class="px-4 py-2">Click</td>
+                                    <td class="px-4 py-2">Закрыт</td>
+                                    <td class="px-4 py-2">45 000 сум</td>
+                                    <td class="px-4 py-2">1 000 сум</td>
+                                </tr>
+                                <tr class="border-b-[1px] border-gray-300">
+                                    <td class="px-4 py-2 font-[500] text-[16px]">912987</td>
+                                    <td class="px-4 py-2">23.05.2021</td>
+                                    <td class="px-4 py-2">Payme</td>
+                                    <td class="px-4 py-2">Закрыт</td>
+                                    <td class="px-4 py-2">68 000 сум</td>
+                                    <td class="px-4 py-2">8 000 сум</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="lg:hidden flex flex-col ">
+                            <div class="border-y-[1px] py-4">
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">№</h3>
+                                    <p>548648</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Дата</h3>
+                                    <p>11.12.2021</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Способ оплаты</h3>
+                                    <p>Наличные</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Статус</h3>
+                                    <p>Открыт</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Сумма</h3>
+                                    <p>50 000 сум</p>
+                                </ul>
+                            </div>
+                            <div class="border-y-[1px] py-4">
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">№</h3>
+                                    <p>484589</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Дата</h3>
+                                    <p>04.09.2021</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Способ оплаты</h3>
+                                    <p>Терминал</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Статус</h3>
+                                    <p>Закрыт</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Сумма</h3>
+                                    <p>34 000 сум</p>
+                                </ul>
+                            </div>
+                            <div class="border-y-[1px] py-4">
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">№</h3>
+                                    <p>845687</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Дата</h3>
+                                    <p>11.01.2021</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Способ оплаты</h3>
+                                    <p>Терминал</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Статус</h3>
+                                    <p>Закрыт</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Сумма</h3>
+                                    <p>75 000 сум</p>
+                                </ul>
+                            </div>
+                            <div class="border-y-[1px] py-4">
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">№</h3>
+                                    <p>984829</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Дата</h3>
+                                    <p>14.08.2021</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Способ оплаты</h3>
+                                    <p>Click</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Статус</h3>
+                                    <p>Закрыт</p>
+                                </ul>
+                                <ul class="flex justify-between">
+                                    <h3 class="text-[16px] font-[500]">Сумма</h3>
+                                    <p>75 000 сум</p>
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pt-10">
+        <div class="flex justify-center bg-[#EDEDED]">
+            <div class="w-[85%] my-12 hidden md:flex justify-between items-center">
+                <div>
+                    <ul class="flex flex-col gap-4 text-[15px] font-[500] leading-[21px]">
+                        <li>Каталог </li>
+                        <li>Бренды</li>
+                        <a href="company.html">
+                            <li>О компании</li>
+                        </a>
+                        <li class="flex items-center gap-2">
+                            <p>Акции и скидки</p>
+                            <img src="/public/imgs/discount-shape.png" alt="Discount">
+                        </li>
+                        <a href="contacts.html">
+                            <li>Контакты</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="flex gap-10 flex-col items-center">
+                    <div>
+                        <img src="/public/imgs/Vector (1).png" alt="Logo">
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center rounded bg-black text-white leading-[15px] h-[45px]  w-[175px]">
+                            <img class="w-[30px] h-[35px] mx-2" src="/public/imgs/Group.png" alt="">
+                            <p class="text-[12px]">Загрузите в <br><span class="text-[22px]">AppStore</span></p>
+                        </div>
+                        <div class="flex rounded items-center bg-black text-white h-[45px] w-[175px] leading-[15px] ">
+                            <img class="w-[45px] h-[45px] ml-2" src="/public/imgs/Google_Play-Icon-Logo.wine.png"
+                                alt="">
+                            <p class="text-[12px]">Доступно в <br><span class="text-[22px]">Google Play</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <ul class="flex flex-col gap-3 text-[14px] font-[500] underline">
+                        <li>Условия доставки и оплаты</li>
+                        <li>Возврат товаров</li>
+                        <li>Как заказать?</li>
+                        <li>Подарки при покупке</li>
+                        <li>Бонусная информация <br>(условия программы лояльности)</li>
+                        <a href="review.html">
+                            <li>Отзывы о нас</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- sec -->
+            <div class="w-[85%] my-12 flex flex-col md:hidden ">
+                <div class="flex flex-col">
+                    <div>
+                        <img src="/public/imgs/Vector (1).png" alt="Logo">
+                    </div>
+                    <ul class="flex justify-between py-10 text-[15px] font-[500] leading-[21px]">
+                        <div class="flex flex-col gap-3">
+                            <li>Каталог</li>
+                            <li>Бренды</li>
+                            <a href="company.html">
+                                <li>О компании</li>
+                            </a>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <li class="flex items-center gap-2">
+                                <p>Акции <br> и скидки</p>
+                                <img src="/public/imgs/discount-shape.png" alt="Discount">
+                            </li>
+                            <a href="contacts.html">
+                                <li class="basis-1/2">Контакты</li>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="flex flex-col gap-3 text-[14px] font-[500] underline">
+                        <li>Условия доставки и оплаты</li>
+                        <li>Возврат товаров</li>
+                        <li>Как заказать?</li>
+                        <li>Подарки при покупке</li>
+                        <li>Бонусная информация <br>(условия программы лояльности)</li>
+                        <a href="review.html">
+                            <li>Отзывы о нас</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="py-8">
+                    <div class="flex justify-between">
+                        <div class="flex items-center rounded bg-black text-white leading-[15px] h-[45px]  w-[175px]">
+                            <img class="w-[30px] h-[35px] mx-2" src="/public/imgs/Group.png" alt="">
+                            <p class="text-[12px]">Загрузите в <br><span class="text-[22px]">AppStore</span></p>
+                        </div>
+                        <div class="flex rounded items-center bg-black text-white h-[45px] w-[175px] leading-[15px] ">
+                            <img class="w-[45px] h-[45px] ml-2" src="/public/imgs/Google_Play-Icon-Logo.wine.png"
+                                alt="">
+                            <p class="text-[12px]">Доступно в <br><span class="text-[22px]">Google Play</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="flex  justify-center bg-black text-white">
+            <div class="w-[85%] flex gap-5 lg:gap-0 flex-col lg:flex-row lg:justify-between lg:items-center py-5 ">
+                <h3 class="text-[16px] font-[500]">©2022 Kokos. Все права защищены.</h3>
+                <div class="flex gap-8">
+                    <div>
+                        <img class="cursor-pointer" src="/public/imgs/Vector (9).png" alt="">
+                    </div>
+                    <div>
+                        <img class="cursor-pointer" src="/public/imgs/Vector (10).png" alt="">
+                    </div>
+                    <div>
+                        <img class="cursor-pointer" src="/public/imgs/Vector (11).png" alt="">
+                    </div>
+
+                </div>
+                <h3 class="text-[16px] font-[500]">Сайт разработан в Zetta Online</h3>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
